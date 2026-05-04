@@ -5,7 +5,7 @@ This is a one-page interactive microsite built to serve as an executive summary 
 
 ## Links
 - **Live Microsite**: [Live Site URL Placeholder]
-- **Full Case Study**: [Full Case Study URL Placeholder]
+- **Full Case Study**: [https://www.joonhananalytics.com/case-studies/mapping-olist-brazilian-ecommerce-dependence](https://www.joonhananalytics.com/case-studies/mapping-olist-brazilian-ecommerce-dependence)
 - **GitHub Project Repo**: [https://github.com/joonhanofficial/olist-marketplace-dependence-analysis](https://github.com/joonhanofficial/olist-marketplace-dependence-analysis)
 
 ## Files Created

@@ -424,7 +424,7 @@ body {
 .growth-pattern-section { padding: 5rem 0; text-align: center; }
 .growth-pattern-section .container { display: flex; flex-direction: column; align-items: center; }
 .trend-visual-container {
-    width: 100%; max-width: 900px;
+    width: 100%; max-width: 1000px;
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-lg);
