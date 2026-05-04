@@ -158,13 +158,15 @@ body {
 }
 
 .stat-card .signal-interpretation,
-.metric-item .signal-interpretation {
+.metric-item .signal-interpretation,
+.trend-visual-container .signal-interpretation {
     background: transparent;
     padding: 0;
 }
 
 .stat-card .signal-interpretation p,
-.metric-item .signal-interpretation p {
+.metric-item .signal-interpretation p,
+.trend-visual-container .signal-interpretation p {
     font-size: 0.85rem;
     color: var(--text-muted);
     line-height: 1.4;
@@ -173,7 +175,9 @@ body {
 .stat-card.interactive-signal:hover .signal-interpretation,
 .stat-card.interactive-signal.active .signal-interpretation,
 .metric-item.interactive-signal:hover .signal-interpretation,
-.metric-item.interactive-signal.active .signal-interpretation {
+.metric-item.interactive-signal.active .signal-interpretation,
+.trend-visual-container.interactive-signal:hover .signal-interpretation,
+.trend-visual-container.interactive-signal.active .signal-interpretation {
     padding: 0.8rem 0 0 0;
     border-top: 1px dashed rgba(255,255,255,0.1);
     margin-top: 0.8rem;
@@ -426,6 +430,10 @@ body {
     border-radius: var(--radius-lg);
     padding: 2rem;
     margin-top: 2rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition);
 }
 .premium-svg { width: 100%; height: auto; }
 .chart-legend { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
@@ -433,6 +441,32 @@ body {
 .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
 .bg-teal { background: var(--accent-teal); }
 .bg-blue { background: var(--accent-blue); }
+
+.growth-callouts {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.growth-callout {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: rgba(255,255,255,0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.growth-insight-strip {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-main);
+    padding-top: 1.5rem;
+    border-top: 1px dashed rgba(255,255,255,0.1);
+}
 
 /* Insights Section */
 .interpretation-section { padding: 6rem 0; background: rgba(30,41,59,0.2); text-align: center;}
