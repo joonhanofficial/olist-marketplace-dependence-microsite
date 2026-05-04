@@ -23,36 +23,90 @@
 
     <main>
         <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1 class="project-title">Mapping Olist Brazilian Ecommerce Dependence</h1>
-                <p class="subtitle">A Power BI marketplace diagnostic showing whether growth was broad-based or shaped by visible seller and category concentration.</p>
-                <div class="hero-statement">
-                    <p>Growth looked healthy. The real question was whether that growth depended on too few sellers or categories.</p>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 class="project-title">Mapping Olist Brazilian Ecommerce Dependence</h1>
+                    <p class="subtitle">A Power BI marketplace diagnostic examining whether Olist’s growth was broadly distributed or shaped by visible seller and category concentration.</p>
+                    <div class="hero-statement">
+                        <p>Growth looked healthy at the surface. The diagnostic question was whether that growth was broad-based or quietly dependent on a narrow set of sellers and categories.</p>
+                    </div>
+
+                    <div class="hero-stats-split">
+                        <div class="stat-group">
+                            <span class="stat-group-label">Marketplace Scale</span>
+                            <div class="stat-cards scale-cards">
+                                <div class="stat-card interactive-signal">
+                                    <span class="stat-value">13.59M</span>
+                                    <span class="stat-label">total revenue</span>
+                                    <div class="signal-interpretation reveal-content">
+                                        <p>Revenue scale was strong enough to justify a dependency check, not just a growth summary.</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card interactive-signal">
+                                    <span class="stat-value">99K</span>
+                                    <span class="stat-label">total orders</span>
+                                    <div class="signal-interpretation reveal-content">
+                                        <p>Order volume helped test whether growth was supported by broad marketplace activity.</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card interactive-signal">
+                                    <span class="stat-value">3,095</span>
+                                    <span class="stat-label">active sellers</span>
+                                    <div class="signal-interpretation reveal-content">
+                                        <p>A larger seller base reduced the chance that growth depended on only a few sellers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-group">
+                            <span class="stat-group-label">Dependency Signals</span>
+                            <div class="stat-cards risk-cards">
+                                <div class="stat-card risk-card interactive-signal">
+                                    <span class="stat-value highlight-teal">13.15%</span>
+                                    <span class="stat-label">top 10 seller share</span>
+                                    <div class="signal-interpretation reveal-content">
+                                        <p>The top sellers mattered, but the share did not suggest extreme seller dependence.</p>
+                                    </div>
+                                </div>
+                                <div class="stat-card risk-card interactive-signal">
+                                    <span class="stat-value highlight-blue">9.26%</span>
+                                    <span class="stat-label">top category contribution</span>
+                                    <div class="signal-interpretation reveal-content">
+                                        <p>Category leadership was visible, but no single category appeared to dominate marketplace revenue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <span class="stat-value">13.59M</span>
-                        <span class="stat-label">total revenue</span>
+                <div class="hero-visual">
+                    <div class="dependency-lens-card interactive-signal">
+                        <div class="lens-header">
+                            <span class="lens-icon">⚲</span>
+                            <h3>Dependency Lens</h3>
+                        </div>
+                        <div class="lens-body">
+                            <div class="lens-row">
+                                <span class="row-label">Marketplace Scale</span>
+                                <span class="row-value">13.59M revenue / 99K orders</span>
+                            </div>
+                            <div class="lens-row">
+                                <span class="row-label">Seller Concentration</span>
+                                <span class="row-value highlight-value-teal">Top 10 sellers = 13.15%</span>
+                            </div>
+                            <div class="lens-row">
+                                <span class="row-label">Category Leadership</span>
+                                <span class="row-value highlight-value-blue">Top category = 9.26%</span>
+                            </div>
+                            <div class="lens-takeaway" style="margin-top: 1rem; font-weight: 500; color: var(--accent-teal);">
+                                Visible concentration, not single-point dependence.
+                            </div>
+                        </div>
+                        <div class="signal-interpretation reveal-content">
+                            <p>The analysis compared scale with concentration to judge whether marketplace growth was broadly supported or overly dependent on narrow revenue drivers.</p>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-value">99K</span>
-                        <span class="stat-label">total orders</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">3,095</span>
-                        <span class="stat-label">active sellers</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-value">13.15%</span>
-                        <span class="stat-label">top 10 seller share</span>
-                    </div>
-                </div>
-
-                <div class="hero-ctas">
-                    <a href="FULL_CASE_STUDY_URL_HERE" class="btn btn-primary">Read Full Case Study</a>
-                    <a href="https://github.com/joonhanofficial/olist-marketplace-dependence-analysis" target="_blank" class="btn btn-secondary">View GitHub Repo</a>
-                    <a href="https://www.joonhananalytics.com/contact" target="_blank" class="btn btn-tertiary">Contact / Portfolio</a>
                 </div>
             </div>
         </section>
@@ -68,39 +122,39 @@
             <div class="container">
                 <h2 class="section-title">From marketplace scale to dependency diagnosis.</h2>
                 <div class="diagnostic-cards">
-                    <div class="diagnostic-card">
+                    <div class="diagnostic-card interactive-signal">
                         <div class="card-number">01</div>
                         <h3 class="card-title">Revenue and order trends</h3>
-                        <div class="card-reveal">
-                            <p>Assessing overall marketplace trajectory to ensure participation was driving growth.</p>
+                        <div class="signal-interpretation reveal-content">
+                            <p>Checks whether growth was broad-based.</p>
                         </div>
                     </div>
-                    <div class="diagnostic-card">
+                    <div class="diagnostic-card interactive-signal">
                         <div class="card-number">02</div>
                         <h3 class="card-title">Seller concentration</h3>
-                        <div class="card-reveal">
-                            <p>Testing if a narrow group of sellers dominated marketplace revenue generation.</p>
+                        <div class="signal-interpretation reveal-content">
+                            <p>Tests dependence on top sellers.</p>
                         </div>
                     </div>
-                    <div class="diagnostic-card">
+                    <div class="diagnostic-card interactive-signal">
                         <div class="card-number">03</div>
                         <h3 class="card-title">Category contribution</h3>
-                        <div class="card-reveal">
-                            <p>Evaluating whether specific product categories captured a disproportionate share of volume.</p>
+                        <div class="signal-interpretation reveal-content">
+                            <p>Checks whether one category dominates.</p>
                         </div>
                     </div>
-                    <div class="diagnostic-card">
+                    <div class="diagnostic-card interactive-signal">
                         <div class="card-number">04</div>
                         <h3 class="card-title">Activity over time</h3>
-                        <div class="card-reveal">
-                            <p>Correlating revenue with order frequency to rule out isolated high-value dependencies.</p>
+                        <div class="signal-interpretation reveal-content">
+                            <p>Checks whether growth patterns were sustained.</p>
                         </div>
                     </div>
-                    <div class="diagnostic-card">
+                    <div class="diagnostic-card interactive-signal">
                         <div class="card-number">05</div>
                         <h3 class="card-title">Dependency interpretation</h3>
-                        <div class="card-reveal">
-                            <p>Translating scale and concentration metrics into an assessment of marketplace health.</p>
+                        <div class="signal-interpretation reveal-content">
+                            <p>Connects scale and concentration.</p>
                         </div>
                     </div>
                 </div>
@@ -136,17 +190,26 @@
                 <h2 class="section-title">Seller Concentration Signal</h2>
                 <div class="signal-content interactive-signal">
                     <div class="signal-stat">
-                        <span class="signal-value">13.15%</span>
+                        <span class="signal-value highlight-teal">13.15%</span>
                         <span class="signal-label">top 10 sellers’ revenue share</span>
                     </div>
-                    <div class="visual-container">
-                        <div class="visual-label">meaningful concentration, not extreme dependence</div>
-                        <div class="dependency-meter">
-                            <div class="meter-fill seller-fill" style="width: 13.15%;"></div>
+                    
+                    <div class="diagnostic-meter-container">
+                        <div class="meter-zones">
+                            <div class="zone">Low dependence</div>
+                            <div class="zone active-zone">Visible concentration</div>
+                            <div class="zone">High dependence</div>
+                        </div>
+                        <div class="meter-track">
+                            <div class="meter-marker" style="left: 35%;">
+                                <div class="marker-pin teal-pin"></div>
+                                <div class="marker-label">13.15%</div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="signal-interpretation reveal-content">
-                        <p>This signal suggests concentration exists, but the marketplace was not exposed to a single seller group as the dominant revenue driver.</p>
+                        <p>The top 10 sellers contributed a meaningful share, but not enough to suggest extreme dependence on one seller group.</p>
                     </div>
                 </div>
             </div>
@@ -157,14 +220,24 @@
                 <h2 class="section-title">Category Contribution Signal</h2>
                 <div class="signal-content interactive-signal">
                     <div class="signal-stat">
-                        <span class="signal-value">9.26%</span>
+                        <span class="signal-value highlight-blue">9.26%</span>
                         <span class="signal-label">top category contribution</span>
                     </div>
-                    <div class="visual-container">
-                        <div class="category-leadership-card">
-                            <div class="leadership-bar" style="width: 9.26%;"></div>
+                    
+                    <div class="diagnostic-meter-container">
+                        <div class="meter-zones">
+                            <div class="zone">Diffuse category spread</div>
+                            <div class="zone active-zone-blue">Visible category leadership</div>
+                            <div class="zone">Category dominance</div>
+                        </div>
+                        <div class="meter-track">
+                            <div class="meter-marker" style="left: 30%;">
+                                <div class="marker-pin blue-pin"></div>
+                                <div class="marker-label">9.26%</div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="signal-interpretation reveal-content">
                         <p>Category leadership existed, but the marketplace did not appear captured by one category alone.</p>
                     </div>
@@ -175,25 +248,39 @@
         <section id="growth" class="growth-pattern-section">
             <div class="container">
                 <h2 class="section-title">Revenue and orders moved together.</h2>
-                <p class="section-desc">Revenue and order trends rose together over time, suggesting marketplace growth was supported by broader activity rather than only isolated high-value transactions.</p>
+                <p class="section-desc">Revenue and order trends rose together over time, suggesting broader marketplace activity rather than isolated high-value transactions.</p>
                 
-                <div class="trend-visual">
-                    <svg viewBox="0 0 800 200" class="line-chart">
-                        <!-- Background grid -->
-                        <line x1="0" y1="150" x2="800" y2="150" stroke="#1E293B" stroke-width="1" />
-                        <line x1="0" y1="100" x2="800" y2="100" stroke="#1E293B" stroke-width="1" />
-                        <line x1="0" y1="50" x2="800" y2="50" stroke="#1E293B" stroke-width="1" />
+                <div class="trend-visual-container">
+                    <svg viewBox="0 0 800 250" class="line-chart premium-svg">
+                        <defs>
+                            <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="rgba(20, 184, 166, 0.4)"/>
+                                <stop offset="100%" stop-color="rgba(20, 184, 166, 0)"/>
+                            </linearGradient>
+                            <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="rgba(59, 130, 246, 0.4)"/>
+                                <stop offset="100%" stop-color="rgba(59, 130, 246, 0)"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Grid lines -->
+                        <line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                        <line x1="0" y1="130" x2="800" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                        <line x1="0" y1="60" x2="800" y2="60" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
                         
-                        <!-- Order Trend Line (Muted Blue) -->
-                        <path d="M 0,160 Q 100,140 200,120 T 400,90 T 600,60 T 800,40" fill="none" stroke="#3B82F6" stroke-width="3" opacity="0.6"/>
-                        
-                        <!-- Revenue Trend Line (Teal) -->
-                        <path d="M 0,180 Q 100,160 200,130 T 400,95 T 600,50 T 800,20" fill="none" stroke="#14B8A6" stroke-width="3" />
-                        
-                        <!-- Labels -->
-                        <text x="790" y="15" fill="#14B8A6" text-anchor="end" font-size="12" font-family="Inter">Revenue</text>
-                        <text x="790" y="35" fill="#3B82F6" text-anchor="end" font-size="12" font-family="Inter" opacity="0.8">Orders</text>
+                        <!-- Blue Area -->
+                        <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80 L 800,250 L 0,250 Z" fill="url(#blueGrad)" opacity="0.5"/>
+                        <!-- Teal Area -->
+                        <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50 L 800,250 L 0,250 Z" fill="url(#tealGrad)" opacity="0.5"/>
+
+                        <!-- Blue Line (Orders) -->
+                        <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+                        <!-- Teal Line (Revenue) -->
+                        <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50" fill="none" stroke="#14B8A6" stroke-width="3" stroke-linecap="round"/>
                     </svg>
+                    <div class="chart-legend">
+                        <div class="legend-item"><span class="legend-dot bg-teal"></span> Revenue</div>
+                        <div class="legend-item"><span class="legend-dot bg-blue"></span> Orders</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -203,7 +290,7 @@
                 <h2 class="section-title">The issue was not whether Olist was growing. It was whether growth was concentrated.</h2>
                 <div class="insight-cards">
                     <div class="insight-card">
-                        <p>Seller dependence was visible but not extreme</p>
+                        <p>Seller concentration was visible but not extreme</p>
                     </div>
                     <div class="insight-card">
                         <p>Category leadership existed without overwhelming dominance</p>
@@ -216,21 +303,34 @@
         </section>
 
         <section id="links" class="proof-links-section">
-            <div class="container cta-container">
-                <div class="cta-section">
-                    <h3>Continue the Full Case Study</h3>
-                    <a href="FULL_CASE_STUDY_URL_HERE" class="btn btn-primary cta-btn">Read Full Case Study</a>
-                </div>
-                <div class="cta-section">
-                    <h3>Inspect the Project Repo</h3>
-                    <a href="https://github.com/joonhanofficial/olist-marketplace-dependence-analysis" target="_blank" class="btn btn-secondary cta-btn">View GitHub Repo</a>
-                </div>
-                <div class="cta-section">
-                    <h3>Connect With Me</h3>
-                    <div class="social-links">
-                        <a href="https://www.joonhananalytics.com/contact" target="_blank" class="btn btn-tertiary">Portfolio Contact</a>
-                        <a href="https://www.linkedin.com/in/joon-hanofficial" target="_blank" class="btn btn-tertiary">LinkedIn</a>
-                        <a href="mailto:joonhan.work@gmail.com" class="btn btn-tertiary">Email</a>
+            <div class="container">
+                <div class="cta-layout">
+                    <div class="cta-block">
+                        <div class="cta-content">
+                            <h3>Continue the Full Case Study</h3>
+                            <p>Read the comprehensive breakdown of the methodology and data model.</p>
+                        </div>
+                        <a href="FULL_CASE_STUDY_URL_HERE" class="btn btn-primary cta-btn">Read Full Case Study</a>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <div class="cta-content">
+                            <h3>Inspect the Project Repo</h3>
+                            <p>View the source code, DAX formulas, and dataset details.</p>
+                        </div>
+                        <a href="https://github.com/joonhanofficial/olist-marketplace-dependence-analysis" target="_blank" class="btn btn-secondary cta-btn">View GitHub Repo</a>
+                    </div>
+                    
+                    <div class="cta-block">
+                        <div class="cta-content">
+                            <h3>Connect With Me</h3>
+                            <p>Discuss the project or reach out for portfolio inquiries.</p>
+                        </div>
+                        <div class="social-links-inline">
+                            <a href="https://www.joonhananalytics.com/contact" target="_blank" class="btn btn-tertiary">Portfolio Contact</a>
+                            <a href="https://www.linkedin.com/in/joon-hanofficial" target="_blank" class="btn btn-tertiary">LinkedIn</a>
+                            <a href="mailto:joonhan.work@gmail.com" class="btn btn-tertiary">Email</a>
+                        </div>
                     </div>
                 </div>
             </div>
