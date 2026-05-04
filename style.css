@@ -436,36 +436,87 @@ body {
     transition: var(--transition);
 }
 .premium-svg { width: 100%; height: auto; }
-.chart-legend { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
-.legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted); }
 .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
 .bg-teal { background: var(--accent-teal); }
 .bg-blue { background: var(--accent-blue); }
 
-.growth-callouts {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+.diagnostic-reading-guide {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    text-align: left;
 }
 
-.growth-callout {
+.guide-header {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 0.8rem;
+}
+
+.guide-header h4 {
     font-size: 0.85rem;
     color: var(--text-muted);
-    background: rgba(255,255,255,0.05);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
-.growth-insight-strip {
-    margin-top: 1.5rem;
-    font-size: 1rem;
+.guide-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.guide-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.guide-legend-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.legend-title {
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--text-main);
-    padding-top: 1.5rem;
-    border-top: 1px dashed rgba(255,255,255,0.1);
+}
+
+.legend-icon {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+}
+
+.guide-meaning {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    padding-left: 1.2rem;
+}
+
+.combined-row {
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed rgba(255,255,255,0.05);
+}
+
+.guide-takeaway {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    background: rgba(20, 184, 166, 0.05);
+    border-left: 3px solid var(--accent-teal);
+    padding: 0.8rem 1rem;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 /* Insights Section */
