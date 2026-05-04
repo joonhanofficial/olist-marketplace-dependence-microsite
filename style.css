@@ -157,19 +157,23 @@ body {
     transition: var(--transition);
 }
 
-.stat-card .signal-interpretation {
+.stat-card .signal-interpretation,
+.metric-item .signal-interpretation {
     background: transparent;
     padding: 0;
 }
 
-.stat-card .signal-interpretation p {
+.stat-card .signal-interpretation p,
+.metric-item .signal-interpretation p {
     font-size: 0.85rem;
     color: var(--text-muted);
     line-height: 1.4;
 }
 
 .stat-card.interactive-signal:hover .signal-interpretation,
-.stat-card.interactive-signal.active .signal-interpretation {
+.stat-card.interactive-signal.active .signal-interpretation,
+.metric-item.interactive-signal:hover .signal-interpretation,
+.metric-item.interactive-signal.active .signal-interpretation {
     padding: 0.8rem 0 0 0;
     border-top: 1px dashed rgba(255,255,255,0.1);
     margin-top: 0.8rem;
@@ -325,6 +329,10 @@ body {
     background: var(--bg-card); border: 1px solid var(--border-subtle); 
     padding: 2rem; border-radius: var(--radius-lg); 
     display: flex; flex-direction: column; 
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition);
 }
 .metric-value { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.5rem; }
 .metric-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
