@@ -263,61 +263,65 @@
                 <p class="section-desc">If revenue rises without order activity, growth may depend on fewer high-value transactions. Here, revenue and orders moved in the same direction, suggesting broader marketplace participation.</p>
                 
                 <div class="trend-visual-container interactive-signal">
-                    <svg viewBox="0 0 800 250" class="line-chart premium-svg">
-                        <defs>
-                            <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0%" stop-color="rgba(20, 184, 166, 0.4)"/>
-                                <stop offset="100%" stop-color="rgba(20, 184, 166, 0)"/>
-                            </linearGradient>
-                            <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0%" stop-color="rgba(59, 130, 246, 0.4)"/>
-                                <stop offset="100%" stop-color="rgba(59, 130, 246, 0)"/>
-                            </linearGradient>
-                        </defs>
-                        <!-- Grid lines -->
-                        <line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-                        <line x1="0" y1="130" x2="800" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-                        <line x1="0" y1="60" x2="800" y2="60" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-                        
-                        <!-- Blue Area -->
-                        <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80 L 800,250 L 0,250 Z" fill="url(#blueGrad)" opacity="0.5"/>
-                        <!-- Teal Area -->
-                        <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50 L 800,250 L 0,250 Z" fill="url(#tealGrad)" opacity="0.5"/>
+                    <div class="trend-layout">
+                        <div class="chart-wrapper">
+                            <svg viewBox="0 0 800 250" class="line-chart premium-svg">
+                                <defs>
+                                    <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="rgba(20, 184, 166, 0.4)"/>
+                                        <stop offset="100%" stop-color="rgba(20, 184, 166, 0)"/>
+                                    </linearGradient>
+                                    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="rgba(59, 130, 246, 0.4)"/>
+                                        <stop offset="100%" stop-color="rgba(59, 130, 246, 0)"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Grid lines -->
+                                <line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                                <line x1="0" y1="130" x2="800" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                                <line x1="0" y1="60" x2="800" y2="60" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                                
+                                <!-- Blue Area -->
+                                <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80 L 800,250 L 0,250 Z" fill="url(#blueGrad)" opacity="0.5"/>
+                                <!-- Teal Area -->
+                                <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50 L 800,250 L 0,250 Z" fill="url(#tealGrad)" opacity="0.5"/>
 
-                        <!-- Blue Line (Orders) -->
-                        <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
-                        <!-- Teal Line (Revenue) -->
-                        <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50" fill="none" stroke="#14B8A6" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
-                    <div class="diagnostic-reading-guide">
-                        <div class="guide-header">
-                            <h4>How to read this signal</h4>
+                                <!-- Blue Line (Orders) -->
+                                <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+                                <!-- Teal Line (Revenue) -->
+                                <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50" fill="none" stroke="#14B8A6" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
                         </div>
-                        <div class="guide-rows">
-                            <div class="guide-row">
-                                <div class="guide-legend-label">
-                                    <span class="legend-dot bg-teal"></span>
-                                    <span class="legend-title">Revenue line</span>
-                                </div>
-                                <div class="guide-meaning">Marketplace value increased over time.</div>
+                        <div class="diagnostic-reading-guide side-panel">
+                            <div class="guide-header">
+                                <h4>Reading the Signal</h4>
                             </div>
-                            <div class="guide-row">
-                                <div class="guide-legend-label">
-                                    <span class="legend-dot bg-blue"></span>
-                                    <span class="legend-title">Orders line</span>
+                            <div class="guide-rows">
+                                <div class="guide-row">
+                                    <div class="guide-legend-label">
+                                        <span class="legend-dot bg-teal"></span>
+                                        <span class="legend-title">Revenue</span>
+                                    </div>
+                                    <div class="guide-meaning">Value increased over time.</div>
                                 </div>
-                                <div class="guide-meaning">Transaction activity rose alongside revenue.</div>
-                            </div>
-                            <div class="guide-row combined-row">
-                                <div class="guide-legend-label">
-                                    <span class="legend-icon">⚲</span>
-                                    <span class="legend-title">Combined pattern</span>
+                                <div class="guide-row">
+                                    <div class="guide-legend-label">
+                                        <span class="legend-dot bg-blue"></span>
+                                        <span class="legend-title">Orders</span>
+                                    </div>
+                                    <div class="guide-meaning">Transaction activity rose with revenue.</div>
                                 </div>
-                                <div class="guide-meaning">Growth looked healthier because value and activity moved together.</div>
+                                <div class="guide-row combined-row">
+                                    <div class="guide-legend-label">
+                                        <span class="legend-icon">⚲</span>
+                                        <span class="legend-title">Pattern</span>
+                                    </div>
+                                    <div class="guide-meaning">Growth looked broader, not isolated.</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="guide-takeaway">
-                            If revenue had risen alone, dependency risk would look higher. Here, the paired movement supports broader marketplace participation.
+                            <div class="guide-takeaway">
+                                Scale and activity moved together.
+                            </div>
                         </div>
                     </div>
                     
