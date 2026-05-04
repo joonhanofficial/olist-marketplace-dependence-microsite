@@ -162,11 +162,19 @@ body {
     padding: 0;
 }
 
-.stat-card:hover .signal-interpretation,
-.stat-card.active .signal-interpretation {
-    padding: 1rem 0 0 0;
-    border-top: 1px solid var(--border-subtle);
-    margin-top: 1rem;
+.stat-card .signal-interpretation p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.stat-card.interactive-signal:hover .signal-interpretation,
+.stat-card.interactive-signal.active .signal-interpretation {
+    padding: 0.8rem 0 0 0;
+    border-top: 1px dashed rgba(255,255,255,0.1);
+    margin-top: 0.8rem;
+    max-height: 80px;
+    background: transparent;
 }
 
 .risk-card {
