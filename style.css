@@ -119,7 +119,7 @@ body {
 }
 
 .subtitle { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2rem; }
-.hero-statement p { font-size: 1.2rem; font-weight: 500; color: var(--text-main); margin-bottom: 3rem; border-left: 3px solid var(--accent-teal); padding-left: 1rem;}
+.hero-statement p { font-size: 1.2rem; font-weight: 500; color: var(--text-main); margin-bottom: 4rem; border-left: 3px solid var(--accent-teal); padding-left: 1rem;}
 
 .hero-stats-split {
     display: flex;
