@@ -265,7 +265,7 @@
                 <div class="trend-visual-container interactive-signal">
                     <div class="trend-layout">
                         <div class="chart-wrapper">
-                            <svg viewBox="0 0 800 250" class="line-chart premium-svg">
+                            <svg viewBox="0 0 800 280" class="line-chart premium-svg">
                                 <defs>
                                     <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
                                         <stop offset="0%" stop-color="rgba(20, 184, 166, 0.4)"/>
@@ -276,20 +276,33 @@
                                         <stop offset="100%" stop-color="rgba(59, 130, 246, 0)"/>
                                     </linearGradient>
                                 </defs>
+                                
+                                <!-- Context Note -->
+                                <text x="10" y="25" fill="rgba(255,255,255,0.3)" font-size="11" font-style="italic">Directional trend view, not exact-value scale.</text>
+
+                                <!-- Y-axis Scale Labels -->
+                                <text x="10" y="55" fill="var(--text-muted)" font-size="12" font-weight="500" letter-spacing="0.5">↑ Higher marketplace activity</text>
+                                <text x="10" y="230" fill="var(--text-muted)" font-size="12" font-weight="500" letter-spacing="0.5">↓ Lower marketplace activity</text>
+
                                 <!-- Grid lines -->
                                 <line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
                                 <line x1="0" y1="130" x2="800" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
                                 <line x1="0" y1="60" x2="800" y2="60" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
                                 
                                 <!-- Blue Area -->
-                                <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80 L 800,250 L 0,250 Z" fill="url(#blueGrad)" opacity="0.5"/>
+                                <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80 L 800,240 L 0,240 Z" fill="url(#blueGrad)" opacity="0.5"/>
                                 <!-- Teal Area -->
-                                <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50 L 800,250 L 0,250 Z" fill="url(#tealGrad)" opacity="0.5"/>
+                                <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50 L 800,240 L 0,240 Z" fill="url(#tealGrad)" opacity="0.5"/>
 
                                 <!-- Blue Line (Orders) -->
                                 <path d="M 0,210 Q 150,190 300,160 T 550,110 T 800,80" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
                                 <!-- Teal Line (Revenue) -->
                                 <path d="M 0,220 Q 150,200 300,170 T 550,120 T 800,50" fill="none" stroke="#14B8A6" stroke-width="3" stroke-linecap="round"/>
+
+                                <!-- X-axis Scale Labels -->
+                                <line x1="0" y1="240" x2="800" y2="240" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                                <text x="10" y="265" fill="var(--text-muted)" font-size="12" font-weight="500" letter-spacing="0.5">Earlier period</text>
+                                <text x="790" y="265" fill="var(--text-muted)" font-size="12" font-weight="500" letter-spacing="0.5" text-anchor="end">Later period →</text>
                             </svg>
                         </div>
                         <div class="diagnostic-reading-guide side-panel">
